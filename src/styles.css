@@ -1203,3 +1203,43 @@ footer {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+
+  .hero-slider {
+    height: 75vh;
+  }
+
+  .hero-content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+    margin: 15px 0;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+
+  /* Hide arrows on mobile */
+  .prev,
+  .next {
+    display: none;
+  }
+
+  /* Dots spacing */
+  .dots {
+    bottom: 10px;
+  }
+}
