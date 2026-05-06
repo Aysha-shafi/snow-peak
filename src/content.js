@@ -65,25 +65,14 @@ export const swatches = [
   { color: '#b8962e', label: 'Gold' },
   { color: '#f1c40f', label: 'Rally Yellow' },
   { color: '#27ae60', label: 'British Green' },
-  { color: '#2980b9', label: 'Glacier Blue' },
-  { color: '#8e44ad', label: 'Purple Haze' },
-  { color: '#bdc3c7', label: 'Pearl Silver' },
   { color: '#f0f0ee', label: 'Snow White' },
-  { color: '#2c2c2c', label: 'Graphite Grey' },
-  { color: '#7f8c8d', label: 'Steel Grey' },
-  { color: '#95a5a6', label: 'Silver Mist' },
-  { color: '#34495e', label: 'Slate Blue' },
-  { color: '#0b3d91', label: 'Royal Blue' },
   { color: '#16a085', label: 'Teal Green' },
   { color: '#145a32', label: 'Forest Green' },
   { color: '#6e2c00', label: 'Mahogany Brown' },
   { color: '#4a235a', label: 'Deep Purple' },
   { color: '#922b21', label: 'Crimson Red' },
   { color: '#d35400', label: 'Amber Orange' },
-  { color: '#f39c12', label: 'Sunset Gold' },
-  { color: '#ecf0f1', label: 'Ice White' },
-  { color: '#d5d8dc', label: 'Platinum Silver' },
-  { color: '#1c1c1c', label: 'Jet Black' }
+ 
 ];
 
 export const features = [
