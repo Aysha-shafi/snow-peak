@@ -1,4 +1,5 @@
 import { categories,swatches } from '../content.js';
+import Marquee from './Marquee.jsx';
 
 const renderIcon = (name) => {
   switch (name) {
@@ -113,6 +114,7 @@ function Products() {
           Hover any shade to see its name. Full chip catalogue available in-store and on request.
         </p>
       </div>
+      <Marquee variant="brands" />
 
     </section>
   );

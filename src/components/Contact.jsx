@@ -51,7 +51,7 @@ ${formData.message}`;
                     <div className="info-label">📍 Address</div>
                     <div className="info-val">
                         <a
-                            href="https://share.google/yQvLqtzDWz7v2XKOY "
+                            href="https://share.google/9Ev684Mwj8qvK6H9q  "
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -73,6 +73,29 @@ ${formData.message}`;
 
                     <div className="info-label">⏰ Working Hours</div>
                     <div className="info-val">{contactInfo.hours}</div>
+
+                    {/* GOOGLE MAP EMBED BLOCK */}
+                    <div className="map-container" style={{ marginTop: '24px' }}>
+                        <iframe
+                            title="Snow Peak Paint Trading LLC"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.8142385108044!2d55.38814757626297!3d25.27681492842037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c165d4bb3bf%3A0x6b245037d4bc972e!2sAl+Qusais+Industrial+Area+4+-+Dubai!5e0!3m2!1sen!2sae!4v1716662400000!5m2!1sen!2sae"
+                            width="500"
+                            height="250"
+                            style={{ border: 0, borderRadius: '12px' }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                        <div style={{ marginTop: '8px' }}>
+                            <a
+                                href="https://maps.google.com/?q=Snow+Peak+Paint+Trading+LLC+Speedex+Center+Building+Al+Qusais"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="view-map-link">
+                                📍 View on Google Maps
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="reveal">

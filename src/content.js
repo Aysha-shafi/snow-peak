@@ -88,7 +88,53 @@ export const aboutStats = [
   { value: '80+', label: 'Dealer Partners' },
   { value: '12', label: 'Countries Served' }
 ];
-
+export const brands = [
+  { 
+    name: 'Cromax', 
+    logo: '/cromax-logo.png', // Replace with your actual path in the public folder
+    desc: 'Advanced automotive refinishing paint systems designed for productivity and precision.' 
+  },
+  { 
+    name: 'Glasurit', 
+    logo: '/glasurit-logo.png', 
+    desc: 'Premium paint solutions focused on perfect color matching and eco-efficient coatings.' 
+  },
+  { 
+    name: 'Akzo Nobel', 
+    logo: '/akzo-logo.png', 
+    desc: 'World-class industrial and vehicle refinish products engineered for performance.' 
+  },
+  { 
+    name: 'Sikkens', 
+    logo: '/sikkens.png', 
+    desc: 'State-of-the-art paint technology delivering ultimate gloss, durability, and depth.' 
+  },
+  { 
+    name: 'Spies Hecker', 
+    logo: '/spice.png', 
+    desc: 'High-quality paint systems that optimize bodyshop efficiency and paint results.' 
+  },
+  { 
+    name: 'Standox', 
+    logo: '/stand.png', 
+    desc: 'Premium German-engineered refinish brand offering unmatched color accuracy.' 
+  },
+  { 
+    name: '3M', 
+    logo: '/3m.png', 
+    desc: 'Industry-standard abrasives, masking tapes, and body preparation supplies.' 
+  },
+  { 
+    name: 'Mirka', 
+    logo: '/mirka.webp', 
+    desc: 'Ergonomic dust-free sanding tools and premium abrasives for surface preparation.' 
+  },
+  { 
+    name: 'SIA', 
+    logo: '/sia.png', 
+    desc: 'Innovative Swiss abrasive solutions for flawless surface finishes.' 
+  }
+];
 export const testimonials = [
   {
     initials: 'RK',

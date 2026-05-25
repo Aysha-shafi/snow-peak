@@ -278,7 +278,7 @@ color:#b8962e
   letter-spacing: 0.12em;
   text-transform: uppercase;
   border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.9s, color 0.2s;
 }
 
 .btn-primary,
@@ -287,6 +287,7 @@ color:#b8962e
   color: var(--white);
   border-color: var(--navy3);
 }
+
 
 .btn-primary:hover,
 .form-submit:hover {
@@ -1242,4 +1243,226 @@ footer {
   .dots {
     bottom: 10px;
   }
+}
+
+/* --- BRAND CAROUSEL CONTAINER STRUCTURE --- */
+.brands-section {
+  margin-top: 3rem;
+  padding: 5rem 2rem 3rem 2rem;
+  background:rgb(247, 247, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brands-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Accommodates a clear wider spread of columns layout on desktop */
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.brands-slider-viewport {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 15px 0;
+}
+
+.brands-slider-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%; /* Keeps track sizing exactly relative to viewport boundaries */
+}
+
+/* DESKTOP DISPLAY MODE layout proportions */
+.brand-slide-item {
+  min-width: 33.3333%; /* 3 elements explicitly per step row view */
+  width: 33.3333%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 15px; 
+}
+
+.brand-card {
+  width: 100%;
+  /* Dark premium luxury background coat */
+  background: linear-gradient(145deg, rgba(121, 121, 210, 0.7), rgba(92, 92, 100, 0.9));
+  
+  /* Semi-transparent sleek border trim */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* Clean premium ambient base shadow elevation drop */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 
+              inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              border-color 0.4s ease, 
+              box-shadow 0.4s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  border-color: #b8962e;
+}
+
+/* Ensure the circle wrapper behaves correctly */
+.brand-logo-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;         /* 28rem alternative */
+  height: 112px;        /* 28rem alternative */
+  border-radius: 50%;
+  overflow: hidden;     /* Clips anything sticking out */
+  background-color: #ffffff;
+  border: 1px solid #f3f4f6;
+  margin: 0 auto;       /* Centers it in the card */
+}
+
+/* FIX: Forces the image to fit inside perfectly without distortion */
+.brand-logo-img {
+  width: 100% ;
+  height: 100% ;
+  object-fit: contain;  /* Scales down logo perfectly inside the circle without cropping */
+  padding: 16px;        /* Keeps corporate borders away from the circle path edge */
+}
+
+.brand-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  margin-bottom: 1rem;
+}
+
+.brand-card-desc {
+  font-size: 0.95rem;
+  color: #e8e2e2;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+/* Arrow controls configuration styles */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #b8962e;
+  color:#b8962e;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.slider-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.slider-arrow:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ac9c69;
+  color: #887c57;
+}
+
+.slider-arrow.left { left: -60px; }
+.slider-arrow.right { right: -60px; }
+
+/* Control dots display array */
+.brands-slider-dots {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(39, 37, 37, 0.2);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.slider-dot.active {
+  background: #b8962e;
+  transform: scale(1.2);
+}
+
+/* MOBILE SYSTEM STYLING SWITCH OVERLAY */
+@media (max-width: 768px) {
+  .brand-slide-item {
+    min-width: 100%; /* Fallback structure layout resets back to display exactly 1 card block item view */
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .brands-slider-container {
+    max-width: 85%;
+  }
+
+  .slider-arrow.left { left: -45px; }
+  .slider-arrow.right { right: -45px; }
+}
+/* --- HEADER CENTERING CONFIGURATION --- */
+
+/* Forces the header wrapper to stack vertically and center all text blocks */
+.section-header.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Centers the label and title wrapper blocks */
+.section-header.text-center > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Ensures the paragraph sub-headline spans beautifully underneath without shifting left */
+.section-header.text-center .section-sub {
+  margin: 1rem auto 0 auto;
+  max-width: 600px; /* Keeps the text paragraph easy to read on wide screens */
+  text-align: center;
+}
+.section-para{
+ 
+  font-size: 0.95rem;
+  color: #192796;
+  line-height: 1.7;
+}
+.view-map-link {
+  font-size: 14px;
+  color: black;
+  text-decoration: none; /* No underline globally */
+}
+
+/* This targets ONLY the text span when the main link is hovered */
+.view-map-link:hover  {
+  color: blue;
+  text-decoration: underline;
 }
