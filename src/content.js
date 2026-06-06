@@ -63,6 +63,7 @@ export const categories = [
   name: "Tools & Accessories",
   icon: "box",
   items: [
+    "Paint Booth",
     "Spray Gun",
     "Orbital Sander",
     "Polishing Machine",
@@ -82,7 +83,7 @@ export const categories = [
   {
     name: "Abrasives",
     icon: "globe",
-    items: ["Sanding Discs", "Abranet", "Sandpaper"]
+    items: ["Sanding Discs", "Sanding Belts", "Abranet", "Sandpaper"]
   },
   
   {
