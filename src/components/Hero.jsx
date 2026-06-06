@@ -12,6 +12,15 @@ const slides = [
 
         desc: "High-quality automotive paints and refinishing products trusted for consistent performance and durability."
     },
+    {
+        
+    image: "/slide44.png",
+    position: "center",
+    badge: "Partnering For Growth",
+    title: "Key To",
+    highlight: "Success",
+    desc: "Quality products and technical expertise that drive successful results."
+    },
 
     {
         image: "/slide2.png",
