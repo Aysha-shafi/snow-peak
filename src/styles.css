@@ -449,11 +449,7 @@ section {
   }
 }
 
-@media (max-width: 576px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .product-card {
 background: linear-gradient(
