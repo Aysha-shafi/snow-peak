@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { navLinks } from '../content.js';
 import { Phone, Mail } from "lucide-react";
 
@@ -9,6 +9,19 @@ const scrollToSection = (id) => {
 
 function Navbar({ activeSection }) {
     const [mobileOpen, setMobileOpen] = useState(false);
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 768) {
+                setMobileOpen(false);
+            }
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     const handleImageError = (event) => {
         const image = event.currentTarget;

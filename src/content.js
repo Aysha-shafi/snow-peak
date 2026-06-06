@@ -30,10 +30,50 @@ export const categories = [
     ]
   },
   {
-    name: "Tools & Equipment",
-    icon: "box",
-    items: ["Spray Gun", "Orbital Sander", "Polishing Machine"]
-  },
+  name: "Marine Paint",
+  icon: "globe",
+  items: [
+    "Anti-Fouling Paint",
+    "Marine Primer",
+    "Top Coat",
+    "Epoxy Coating"
+  ]
+},
+{
+  name: "Industrial Paint",
+  icon: "factory",
+  items: [
+    "Epoxy Paint",
+    "PU Coating",
+    "Heat Resistant Paint",
+    "Protective Coating"
+  ]
+},
+{
+  name: "Aircraft Coatings",
+  icon: "plane",
+  items: [
+    "Aircraft Primer",
+    "Topcoat",
+    "Corrosion Protection",
+    "Aerospace Finishes"
+  ]
+},
+  {
+  name: "Tools & Accessories",
+  icon: "box",
+  items: [
+    "Spray Gun",
+    "Orbital Sander",
+    "Polishing Machine",
+    "Mixing Cups",
+    "Microfibers",
+    "Tack Cloths",
+    "Thinner",
+    "Hardener",
+    "Activator"
+  ]
+},
   {
     name: "Safety Products",
     icon: "shield",
@@ -44,16 +84,13 @@ export const categories = [
     icon: "globe",
     items: ["Sanding Discs", "Abranet", "Sandpaper"]
   },
-  {
-    name: "Accessories",
-    icon: "box",
-    items: ["Thinner", "Hardener", "Mixing Cups","Activator","Microfibers","Tack Cloths"]
-  },
+  
   {
     name:"Polishing & Finishing",
     icon: "box",
     items: ["Rubbing Compound", "Polishing Compound", "Cutting Compound", "Finishing Polish"]
-    }
+    },
+    
 ];
 
 export const swatches = [

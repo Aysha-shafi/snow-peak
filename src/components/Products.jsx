@@ -10,6 +10,19 @@ const renderIcon = (name) => {
           <path d="M12 3v18M3 12h18" />
         </svg>
       );
+      case 'factory':
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="#b8962e" strokeWidth="1.5">
+      <path d="M3 21V9l6 3V9l6 3V3l6 3v15H3z" />
+    </svg>
+  );
+
+case 'plane':
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="#b8962e" strokeWidth="1.5">
+      <path d="M2 16l20-4-20-4 5 4-5 4z" />
+    </svg>
+  );
     case 'star':
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="#b8962e" strokeWidth="1.5">

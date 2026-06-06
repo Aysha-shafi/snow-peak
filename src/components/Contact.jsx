@@ -79,7 +79,7 @@ ${formData.message}`;
                         <iframe
                             title="Snow Peak Paint Trading LLC"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.8142385108044!2d55.38814757626297!3d25.27681492842037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c165d4bb3bf%3A0x6b245037d4bc972e!2sAl+Qusais+Industrial+Area+4+-+Dubai!5e0!3m2!1sen!2sae!4v1716662400000!5m2!1sen!2sae"
-                            width="500"
+                            width="100%"
                             height="250"
                             style={{ border: 0, borderRadius: '12px' }}
                             allowFullScreen=""
@@ -98,7 +98,7 @@ ${formData.message}`;
                     </div>
                 </div>
 
-                <div className="reveal">
+                <div className="reveal form-wrapper">
                     <form className="contact-form" onSubmit={handleSubmit}>
                         <div className="form-row">
                             <input
@@ -136,7 +136,7 @@ ${formData.message}`;
                             placeholder="Your message..."
                             required
                         />
-                        <button type="submit" className="form-submit">
+                        <button type="submit" className="form-submit" >
                             Send Enquiry
                         </button>
                         <div className={`form-success${success ? ' visible' : ''}`}>
