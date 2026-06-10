@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const slides = [
     {
-        image: "/slide1.png",
+        image: "/slide11.png",
         position: "center",
 
         badge: "Automotive Refinishing Specialists",
@@ -32,7 +32,7 @@ const slides = [
     },
 
     {
-        image: "/slide3.png",
+        image: "/ship.png",
         position: "center",
         badge: "Trusted Worldwide",
         title: "Built For",

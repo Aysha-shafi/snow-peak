@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import { FaWhatsapp } from "react-icons/fa";
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Careers from './pages/Careers.jsx';
+import JobDetails from './pages/JobDetails.jsx';
 
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
@@ -13,6 +16,13 @@ import './styles.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
+  const location = useLocation();
+
+  useEffect(() => {
+    // Remove 'visible' class from all reveal elements when route changes
+    const revealEls = document.querySelectorAll('.reveal');
+    revealEls.forEach(el => el.classList.remove('visible'));
+  }, [location.pathname]);
 
   useEffect(() => {
     const revealEls = document.querySelectorAll('.reveal');
@@ -32,7 +42,7 @@ function App() {
 
     revealEls.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, []);
+  }, [location.pathname]);
 
   useEffect(() => {
     const sections = document.querySelectorAll('section[id]');
@@ -54,28 +64,57 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Navbar activeSection={activeSection} />
-      <main>
-        <Hero />
-        <Marquee />
-        <Products />
-       
-        <About />
-        <Contact />
-        {/* ✅ WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/971507840351"
-        className="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaWhatsapp />
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar activeSection={activeSection} />
 
-      </a>
-      </main>
-      <Footer />
-    </>
+            <main>
+              <Hero />
+              <Marquee />
+              <Products />
+              <About />
+              <Contact />
+
+              <a
+                href="https://wa.me/971507840351"
+                className="whatsapp-float"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+            </main>
+
+            <Footer />
+          </>
+        }
+      />
+
+      <Route
+        path="/careers"
+        element={
+          <>
+            <Navbar />
+            <Careers />
+            <Footer />
+          </>
+        }
+      />
+
+      <Route
+        path="/careers/:id"
+        element={
+          <>
+            <Navbar />
+            <JobDetails />
+            <Footer />
+          </>
+        }
+      />
+    </Routes>
   );
 }
 

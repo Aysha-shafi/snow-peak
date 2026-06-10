@@ -2,7 +2,8 @@ export const navLinks = [
   { id: 'home', label: 'Home' },
   { id: 'products', label: 'Products' },
   { id: 'about', label: 'About' },
-  { id: 'contact', label: 'Contact' }
+  { id: 'contact', label: 'Contact' },
+  { id: 'careers', label: 'Careers' }
 ];
 
 export const marqueeItems = [
@@ -26,72 +27,73 @@ export const categories = [
       "Clear Coat",
       "Primer & Filler",
       "Matte Finish",
-      "Ceramic Clear"
+      "Ceramic Clear",
+      "Thinner",
+      "Hardener",
+      "Activator"
     ]
   },
   {
-  name: "Marine Paint",
-  icon: "globe",
-  items: [
-    "Anti-Fouling Paint",
-    "Marine Primer",
-    "Top Coat",
-    "Epoxy Coating"
-  ]
-},
-{
-  name: "Industrial Paint",
-  icon: "factory",
-  items: [
-    "Epoxy Paint",
-    "PU Coating",
-    "Heat Resistant Paint",
-    "Protective Coating"
-  ]
-},
-{
-  name: "Aircraft Coatings",
-  icon: "plane",
-  items: [
-    "Aircraft Primer",
-    "Topcoat",
-    "Corrosion Protection",
-    "Aerospace Finishes"
-  ]
-},
+    name: "Marine Paint",
+    icon: "globe",
+    items: [
+      "Anti-Fouling Paint",
+      "Marine Primer",
+      "Top Coat",
+      "Epoxy Coating"
+    ]
+  },
   {
-  name: "Tools & Accessories",
-  icon: "box",
-  items: [
-    "Paint Booth",
-    "Spray Gun",
-    "Orbital Sander",
-    "Polishing Machine",
-    "Mixing Cups",
-    "Microfibers",
-    "Tack Cloths",
-    "Thinner",
-    "Hardener",
-    "Activator"
-  ]
-},
+    name: "Industrial Paint",
+    icon: "factory",
+    items: [
+      "Epoxy Paint",
+      "PU Coating",
+      "Heat Resistant Paint",
+      "Protective Coating"
+    ]
+  },
+  {
+    name: "Aircraft Coatings",
+    icon: "plane",
+    items: [
+      "Aircraft Primer",
+      "Topcoat",
+      "Corrosion Protection",
+      "Aerospace Finishes"
+    ]
+  },
+  {
+    name: "Tools & Accessories",
+    icon: "box",
+    items: [
+      "Paint Booth",
+      "Spray Gun",
+      "Orbital Sander",
+      "Polishing Machine",
+      "Mixing Cups",
+      "Microfibers",
+      "Tack Cloths",
+
+    ]
+  },
   {
     name: "Safety Products",
     icon: "shield",
-    items: ["Gloves", "Masks", "Goggles",  "Safety Shoes","Earplugs","Safety Vests","Helmets","Safety Harness"]
+    items: ["Gloves", "Masks", "Goggles", "Safety Shoes", "Earplugs", "Safety Vests", "Helmets", "Safety Harness"]
   },
   {
     name: "Abrasives",
     icon: "globe",
     items: ["Sanding Discs", "Sanding Belts", "Abranet", "Sandpaper"]
   },
-  
+
   {
-    name:"Polishing & Finishing",
+    name: "Polishing & Finishing",
     icon: "box",
     items: ["Rubbing Compound", "Polishing Compound", "Cutting Compound", "Finishing Polish"]
-    },
-    
+  },
+
 ];
 
 export const swatches = [
@@ -110,7 +112,7 @@ export const swatches = [
   { color: '#4a235a', label: 'Deep Purple' },
   { color: '#922b21', label: 'Crimson Red' },
   { color: '#d35400', label: 'Amber Orange' },
- 
+
 ];
 
 export const features = [
@@ -127,50 +129,50 @@ export const aboutStats = [
   { value: '12', label: 'Countries Served' }
 ];
 export const brands = [
-  { 
-    name: 'Cromax', 
+  {
+    name: 'Cromax',
     logo: '/cromax-logo.png', // Replace with your actual path in the public folder
-    desc: 'Advanced automotive refinishing paint systems designed for productivity and precision.' 
+    desc: 'Advanced automotive refinishing paint systems designed for productivity and precision.'
   },
-  { 
-    name: 'Glasurit', 
-    logo: '/glasurit-logo.png', 
-    desc: 'Premium paint solutions focused on perfect color matching and eco-efficient coatings.' 
+  {
+    name: 'Glasurit',
+    logo: '/glasurit-logo.png',
+    desc: 'Premium paint solutions focused on perfect color matching and eco-efficient coatings.'
   },
-  { 
-    name: 'Akzo Nobel', 
-    logo: '/akzo-logo.png', 
-    desc: 'World-class industrial and vehicle refinish products engineered for performance.' 
+  {
+    name: 'Akzo Nobel',
+    logo: '/akzo-logo.png',
+    desc: 'World-class industrial and vehicle refinish products engineered for performance.'
   },
-  { 
-    name: 'Sikkens', 
-    logo: '/sikkens.png', 
-    desc: 'State-of-the-art paint technology delivering ultimate gloss, durability, and depth.' 
+  {
+    name: 'Sikkens',
+    logo: '/sikkens.png',
+    desc: 'State-of-the-art paint technology delivering ultimate gloss, durability, and depth.'
   },
-  { 
-    name: 'Spies Hecker', 
-    logo: '/spice.png', 
-    desc: 'High-quality paint systems that optimize bodyshop efficiency and paint results.' 
+  {
+    name: 'Spies Hecker',
+    logo: '/spice.png',
+    desc: 'High-quality paint systems that optimize bodyshop efficiency and paint results.'
   },
-  { 
-    name: 'Standox', 
-    logo: '/stand.png', 
-    desc: 'Premium German-engineered refinish brand offering unmatched color accuracy.' 
+  {
+    name: 'Standox',
+    logo: '/stand.png',
+    desc: 'Premium German-engineered refinish brand offering unmatched color accuracy.'
   },
-  { 
-    name: '3M', 
-    logo: '/3m.png', 
-    desc: 'Industry-standard abrasives, masking tapes, and body preparation supplies.' 
+  {
+    name: '3M',
+    logo: '/3m.png',
+    desc: 'Industry-standard abrasives, masking tapes, and body preparation supplies.'
   },
-  { 
-    name: 'Mirka', 
-    logo: '/mirka.webp', 
-    desc: 'Ergonomic dust-free sanding tools and premium abrasives for surface preparation.' 
+  {
+    name: 'Mirka',
+    logo: '/mirka.webp',
+    desc: 'Ergonomic dust-free sanding tools and premium abrasives for surface preparation.'
   },
-  { 
-    name: 'SIA', 
-    logo: '/sia.png', 
-    desc: 'Innovative Swiss abrasive solutions for flawless surface finishes.' 
+  {
+    name: 'SIA',
+    logo: '/sia.png',
+    desc: 'Innovative Swiss abrasive solutions for flawless surface finishes.'
   }
 ];
 export const testimonials = [
@@ -202,7 +204,9 @@ export const footerLinks = [
       { label: 'Home', href: '#home' },
       { label: 'Products', href: '#products' },
       { label: 'About ', href: '#about' },
-      { label: 'Contact', href: '#contact' }
+      { label: 'Contact', href: '#contact' },
+      { label: 'Careers', href: '#careers' },
+
     ]
   },
   {

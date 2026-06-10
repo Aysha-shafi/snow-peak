@@ -1,13 +1,41 @@
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { navLinks } from '../content.js';
 import { Phone, Mail } from "lucide-react";
-
+import { useNavigate, useLocation, Link } from "react-router-dom";
 const scrollToSection = (id) => {
     const target = document.getElementById(id);
     target?.scrollIntoView({ behavior: 'smooth' });
 };
 
 function Navbar({ activeSection }) {
+    const navigate = useNavigate();
+    const location = useLocation();
+    const handleNavClick = (id) => {
+        // Careers page
+        if (id === "careers") {
+            navigate("/careers");
+            return;
+        }
+
+        // If not on home page, go home first
+        if (location.pathname !== "/") {
+            navigate("/", { state: { scrollTo: id } });
+            setTimeout(() => {
+                const target = document.getElementById(id);
+                if (target) {
+                    window.scrollTo(0, 0);
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }, 100);
+                }
+            }, 150);
+
+            return;
+        }
+
+        // Already on home page
+        scrollToSection(id);
+    };
     const [mobileOpen, setMobileOpen] = useState(false);
     useEffect(() => {
         const handleResize = () => {
@@ -46,16 +74,22 @@ function Navbar({ activeSection }) {
                 <ul className="nav-links">
                     {navLinks.map((link) => (
                         <li key={link.id}>
-                            <a
-                                href={`#${link.id}`}
-                                className={activeSection === link.id ? 'active' : ''}
-                                onClick={(event) => {
-                                    event.preventDefault();
-                                    scrollToSection(link.id);
-                                }}
-                            >
-                                {link.label}
-                            </a>
+                            {link.id === "careers" ? (
+                                <Link to="/careers">
+                                    {link.label}
+                                </Link>
+                            ) : (
+                                <a
+                                    href={`#${link.id}`}
+                                    className={activeSection === link.id ? 'active' : ''}
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        handleNavClick(link.id);
+                                    }}
+                                >
+                                    {link.label}
+                                </a>
+                            )}
                         </li>
                     ))}
                 </ul>
@@ -81,19 +115,29 @@ function Navbar({ activeSection }) {
             </nav>
 
             <div className={`mobile-nav${mobileOpen ? ' open' : ''}`}>
-                {navLinks.map((link) => (
-                    <a
-                        key={link.id}
-                        href={`#${link.id}`}
-                        onClick={(event) => {
-                            event.preventDefault();
-                            scrollToSection(link.id);
-                            setMobileOpen(false);
-                        }}
-                    >
-                        {link.label}
-                    </a>
-                ))}
+                {navLinks.map((link) =>
+                    link.id === "careers" ? (
+                        <Link
+                            key={link.id}
+                            to="/careers"
+                            onClick={() => setMobileOpen(false)}
+                        >
+                            {link.label}
+                        </Link>
+                    ) : (
+                        <a
+                            key={link.id}
+                            href={`#${link.id}`}
+                            onClick={(event) => {
+                                event.preventDefault();
+                                handleNavClick(link.id);
+                                setMobileOpen(false);
+                            }}
+                        >
+                            {link.label}
+                        </a>
+                    )
+                )}
 
 
             </div>
