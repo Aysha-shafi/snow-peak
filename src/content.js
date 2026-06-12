@@ -130,6 +130,11 @@ export const aboutStats = [
 ];
 export const brands = [
   {
+    name:'Nexa Autocolor',
+    logo: '/autocolor.png',
+    desc: 'Comprehensive range of automotive refinishing products for perfect color matching.'
+  },
+  {
     name: 'Cromax',
     logo: '/cromax-logo.png', // Replace with your actual path in the public folder
     desc: 'Advanced automotive refinishing paint systems designed for productivity and precision.'
@@ -188,12 +193,8 @@ export const brands = [
     name:'Anest Iwata',
     logo: '/anest.png',
     desc: 'Japanese-engineered spray guns and paint application technology for flawless finishes.'
-  },
-  {
-    name:'Nexa Autocolor',
-    logo: '/autocolor.png',
-    desc: 'Comprehensive range of automotive refinishing products for perfect color matching.'
   }
+  
 ];
 export const testimonials = [
   {
