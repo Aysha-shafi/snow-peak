@@ -196,26 +196,26 @@ export const brands = [
   }
   
 ];
-export const testimonials = [
-  {
-    initials: 'RK',
-    author: 'Rahul Krishnan',
-    role: 'Custom Body Shop, Kochi',
-    text: "Snow Peak's metallic base coat is genuinely flawless. Flake distribution is perfectly even and the colour depth is unlike anything else at this price point."
-  },
-  {
-    initials: 'SA',
-    author: 'Sreejith Anand',
-    role: 'Auto Refinish Studio, Bangalore',
-    text: "Switched our whole workshop over six months ago. Better coverage, faster flash times, and their technical team is always available when we need help."
-  },
-  {
-    initials: 'DP',
-    author: 'Deepak Pillai',
-    role: 'Detailing Pro, Chennai',
-    text: "The ceramic clear coat is a game changer. Fewer swirls, longer-lasting gloss. It has become our go-to top coat for all premium detailing jobs."
-  }
-];
+// export const testimonials = [
+//   {
+//     initials: 'RK',
+//     author: 'Rahul Krishnan',
+//     role: 'Custom Body Shop, Kochi',
+//     text: "Snow Peak's metallic base coat is genuinely flawless. Flake distribution is perfectly even and the colour depth is unlike anything else at this price point."
+//   },
+//   {
+//     initials: 'SA',
+//     author: 'Sreejith Anand',
+//     role: 'Auto Refinish Studio, Bangalore',
+//     text: "Switched our whole workshop over six months ago. Better coverage, faster flash times, and their technical team is always available when we need help."
+//   },
+//   {
+//     initials: 'DP',
+//     author: 'Deepak Pillai',
+//     role: 'Detailing Pro, Chennai',
+//     text: "The ceramic clear coat is a game changer. Fewer swirls, longer-lasting gloss. It has become our go-to top coat for all premium detailing jobs."
+//   }
+// ];
 
 export const footerLinks = [
 

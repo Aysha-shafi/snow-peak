@@ -5,7 +5,7 @@ const slides = [
         image: "/slide11.png",
         position: "center",
 
-        badge: "Industrial & Aviation Coatings",
+        badge: "Aviation & IndustrialCoatings",
         title: "Quality From",
         highlight: "Start to Finish",
         desc: "Advanced coating solutions for aviation, marine, automotive, and industrial applications."
