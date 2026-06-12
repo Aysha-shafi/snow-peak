@@ -173,6 +173,21 @@ export const brands = [
     name: 'SIA',
     logo: '/sia.png',
     desc: 'Innovative Swiss abrasive solutions for flawless surface finishes.'
+  },
+  {
+    name:"Devilbiss",
+    logo: '/devilbiss.jpg',
+    desc: 'Precision spray guns and paint application equipment for professional results.'
+  },
+  {
+    name:'sata',
+    logo: '/sata.webp',
+    desc: 'High-performance spray guns engineered for superior atomization and finish quality.'
+  },
+  {
+    name:'Anest Iwata',
+    logo: '/anest.png',
+    desc: 'Japanese-engineered spray guns and paint application technology for flawless finishes.'
   }
 ];
 export const testimonials = [

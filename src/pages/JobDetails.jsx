@@ -152,7 +152,7 @@ function JobDetails() {
                     <div className="application-right">
 
                         <form
-                            action="https://formsubmit.co/snowpeakpaint @gmail.com"
+                            action="https://formsubmit.co/snowpeakpaint@gmail.com"
                             method="POST"
                             encType="multipart/form-data"
                         >

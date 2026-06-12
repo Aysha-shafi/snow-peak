@@ -72,7 +72,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://facebook.com/snow_peak_paint"
+            href="https://facebook.com/Snow Peak Paint Trading L L c"
             target="_blank"
             rel="noopener noreferrer"
           >
