@@ -5,7 +5,7 @@ const slides = [
         image: "/slide11.png",
         position: "center",
 
-        badge: "Aviation & IndustrialCoatings",
+        badge: "Aviation & Industrial Coatings",
         title: "Quality From",
         highlight: "Start to Finish",
         desc: "Advanced coating solutions for aviation, marine, automotive, and industrial applications."
@@ -46,7 +46,7 @@ function Hero() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prev) => (prev + 1) % slides.length);
-        }, 4000);
+        }, 6000);
         return () => clearInterval(interval);
     }, []);
 

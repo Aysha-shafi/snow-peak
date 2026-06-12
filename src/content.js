@@ -85,7 +85,7 @@ export const categories = [
   {
     name: "Abrasives",
     icon: "globe",
-    items: ["Sanding Discs", "Sanding Belts", "Net Sanding Disc", "Sandpaper"]
+    items: ["Sanding Discs", "Sanding Belts", "Net Sanding Disc", "Sand Paper"]
   },
 
   {
