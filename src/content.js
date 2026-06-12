@@ -85,7 +85,7 @@ export const categories = [
   {
     name: "Abrasives",
     icon: "globe",
-    items: ["Sanding Discs", "Sanding Belts", "Abranet", "Sandpaper"]
+    items: ["Sanding Discs", "Sanding Belts", "Net Sanding Disc", "Sandpaper"]
   },
 
   {
@@ -188,6 +188,11 @@ export const brands = [
     name:'Anest Iwata',
     logo: '/anest.png',
     desc: 'Japanese-engineered spray guns and paint application technology for flawless finishes.'
+  },
+  {
+    name:'Autocolor',
+    logo: '/autocolor.png',
+    desc: 'Comprehensive range of automotive refinishing products for perfect color matching.'
   }
 ];
 export const testimonials = [
