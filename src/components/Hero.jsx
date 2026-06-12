@@ -5,21 +5,19 @@ const slides = [
         image: "/slide11.png",
         position: "center",
 
-        badge: "Automotive Refinishing Specialists",
-
+        badge: "Industrial & Aviation Coatings",
         title: "Quality From",
         highlight: "Start to Finish",
-
-        desc: "High-quality automotive paints and refinishing products trusted for consistent performance and durability."
+        desc: "Advanced coating solutions for aviation, marine, automotive, and industrial applications."
     },
     {
-        
-    image: "/slide44.png",
-    position: "center",
-    badge: "Partnering For Growth",
-    title: "Key To",
-    highlight: "Success",
-    desc: "Quality products and technical expertise that drive successful results."
+
+        image: "/slide44.png",
+        position: "center",
+        badge: "Partnering For Growth",
+        title: "Key To",
+        highlight: "Success",
+        desc: "Quality products and technical expertise that drive successful results."
     },
 
     {
