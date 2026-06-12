@@ -190,7 +190,7 @@ export const brands = [
     desc: 'Japanese-engineered spray guns and paint application technology for flawless finishes.'
   },
   {
-    name:'Autocolor',
+    name:'Nexa Autocolor',
     logo: '/autocolor.png',
     desc: 'Comprehensive range of automotive refinishing products for perfect color matching.'
   }
