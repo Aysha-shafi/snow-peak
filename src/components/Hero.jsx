@@ -2,6 +2,15 @@ import { useState, useEffect } from "react";
 
 const slides = [
     {
+        image: "/slide1.png",
+        position: "center",
+
+        badge: "Automotive Refinishing Specialists",
+        title: "Snow",
+        highlight: "Peak",
+        desc:  "Your trusted partner for high-performance automotive paints, refinishing systems, and professional body shop solutions."
+    },
+    {
         image: "/slide11.png",
         position: "center",
 
