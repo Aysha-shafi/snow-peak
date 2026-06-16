@@ -1881,3 +1881,16 @@ footer {
   font-weight: 700;
   font-size: 1rem;
 }
+.resume-upload input {
+  display: none;
+}
+
+.resume-upload label {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #666;
+}

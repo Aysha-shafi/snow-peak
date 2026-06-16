@@ -4,6 +4,8 @@ function JobDetails() {
     const { id } = useParams();
     const [showForm, setShowForm] = useState(false);
     const formRef = useRef(null);
+    const [fileName, setFileName] = useState("Upload Resume*");
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -217,13 +219,20 @@ function JobDetails() {
 
                             </div>
 
-                            <input
-                                type="file"
-                                name="attachment"
-                                accept=".pdf,.doc,.docx"
-                                className="resume-upload"
-                                required
-                            />
+                            <div className="resume-upload">
+                                <label htmlFor="resume">{fileName}</label>
+
+                                <input
+                                    id="resume"
+                                    type="file"
+                                    name="attachment"
+                                    accept=".pdf,.doc,.docx"
+                                    required
+                                    onChange={(e) =>
+                                        setFileName(e.target.files[0]?.name || "Upload Resume*")
+                                    }
+                                />
+                            </div>
 
                             <button
                                 type="submit"
