@@ -134,6 +134,12 @@ export const brands = [
     logo: '/autocolor.png',
     desc: 'Comprehensive range of automotive refinishing products for perfect color matching.'
   },
+  
+  {
+    name:'ppg',
+    logo: '/ppg.webp',
+    desc: 'Global coatings leader providing innovative paint systems for automotive and industrial applications.'
+  },
   {
     name: 'Cromax',
     logo: '/cromax-logo.png', // Replace with your actual path in the public folder
@@ -193,11 +199,6 @@ export const brands = [
     name:'Anest Iwata',
     logo: '/anest.png',
     desc: 'Japanese-engineered spray guns and paint application technology for flawless finishes.'
-  },
-  {
-    name:'ppg',
-    logo: '/ppg.webp',
-    desc: 'Global coatings leader providing innovative paint systems for automotive and industrial applications.'
   }
   
 ];
