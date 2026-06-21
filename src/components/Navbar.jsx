@@ -98,8 +98,8 @@ function Navbar({ activeSection }) {
                     <a href="tel:+971507840351" className="nav-phone">
                         <Phone size={16} /> +971 507840351
                     </a>
-                    <a href="mailto:snowpeakpaint@gmail.com" className="nav-email">
-                        <Mail size={16} /> snowpeakpaint@gmail.com
+                    <a href="mailto:info@snowpeakpaint.com" className="nav-email">
+                        <Mail size={16} /> info@snowpeakpaint.com
                     </a>
                 </div>
 

@@ -287,7 +287,7 @@ color:#b8962e
 .btn-primary,
 .btn-gold,
 .form-submit {
-  padding: 0.88rem 2rem;
+  padding: 0.75rem 1.5rem;
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -297,7 +297,7 @@ color:#b8962e
 
   /* Fixed button size */
   width: auto;
-  min-width: 180px;
+width: fit-content;
   white-space: nowrap;
 
   display: inline-flex;

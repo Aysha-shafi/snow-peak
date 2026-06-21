@@ -193,6 +193,11 @@ export const brands = [
     name:'Anest Iwata',
     logo: '/anest.png',
     desc: 'Japanese-engineered spray guns and paint application technology for flawless finishes.'
+  },
+  {
+    name:'ppg',
+    logo: '/ppg.webp',
+    desc: 'Global coatings leader providing innovative paint systems for automotive and industrial applications.'
   }
   
 ];
@@ -250,8 +255,12 @@ export const footerLinks = [
         href: 'tel:+971507840351'
       },
       {
-        label: '📩 snowpeakpaint@gmail.com',
-        href: 'mailto:snowpeakpaint@gmail.com'
+        label: '📩 info@snowpeakpaint.com',
+        href: 'mailto:info@snowpeakpaint.com'
+      },
+      {
+        label: '📩  sales@snowpeakpaint.com',
+        href: 'mailto:sales@snowpeakpaint.com'
       },
       {
         label: '⏰ Mon – Sat: 9:00 AM – 6:00 PM'
@@ -263,6 +272,6 @@ export const footerLinks = [
 export const contactInfo = {
   address: 'Snow Peak Paint Trading LLC\nAl Qusais Industrial Area 4 ,Dubai ,United Arab Emirates',
   phone: '+97150 7840351',
-  email: 'snowpeakpaint@gmail .com',
+  email: 'info@snowpeakpaint.com',
   hours: 'Mon – Sat: 9:00 AM – 6:00 PM'
 };

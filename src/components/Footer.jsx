@@ -16,7 +16,7 @@ function Footer() {
 
   const handleLinkClick = (href, event) => {
     event.preventDefault();
-    
+
     // Handle Careers link specially
     if (href === '#careers') {
       navigate('/careers');
@@ -26,7 +26,7 @@ function Footer() {
     // For other anchor links
     if (href.startsWith('#')) {
       const id = href.substring(1);
-      
+
       // If not on home page, navigate to home first
       if (location.pathname !== '/') {
         navigate('/');
@@ -63,24 +63,24 @@ function Footer() {
           </span>
           <div className="footer-tagline">Premium Automotive Paint Systems</div>
           <div className="footer-social">
-          <a
-            href="https://instagram.com/snow_peak_paint"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsInstagram size={20} />
-          </a>
+            <a
+              href="https://instagram.com/snow_peak_paint"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsInstagram size={20} />
+            </a>
 
-          <a
-            href="https://facebook.com/Snow Peak Paint Trading L L c"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook size={20} />
-          </a>
+            <a
+              href="https://facebook.com/Snow Peak Paint Trading L L c"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook size={20} />
+            </a>
+          </div>
         </div>
-        </div>
-        
+
 
         <div className="footer-links">
           {footerLinks.map((column) => (
@@ -90,9 +90,13 @@ function Footer() {
                 {column.links.map((link) => (
                   <li key={link.label}>
                     {link.href ? (
-                      <a 
+                      <a
                         href={link.href}
-                        onClick={(e) => handleLinkClick(link.href, e)}
+                        onClick={(e) => {
+                          if (link.href.startsWith("#")) {
+                            handleLinkClick(link.href, e);
+                          }
+                        }}
                       >
                         {link.label}
                       </a>
