@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 
 const initGA = () => {
-  ReactGA.initialize("G-ABC123XYZ"); // Replace with your Measurement ID
+  ReactGA.initialize("G-YQ3K0959XM"); 
 };
 
 export default initGA;
