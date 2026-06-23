@@ -159,7 +159,7 @@ function JobDetails() {
                             encType="multipart/form-data"
                         >
                             {/* Optional settings */}
-                            <input type="hidden" name="_subject" value="New Job Application - Sales Executive" />
+                            <input type="hidden" name="_subject" value={`New Job Application - ${job.title}`} />
                             <input type="hidden" name="_captcha" value="false" />
 
                             <div className="form-grid">
