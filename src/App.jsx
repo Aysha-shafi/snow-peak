@@ -19,7 +19,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Remove 'visible' class from all reveal elements when route changes
+    // Remove  'visible'  class  from  all  reveal elements  when route changes
     const revealEls = document.querySelectorAll('.reveal');
     revealEls.forEach(el => el.classList.remove('visible'));
   }, [location.pathname]);
